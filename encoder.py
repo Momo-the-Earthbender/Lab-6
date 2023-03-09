@@ -2,7 +2,14 @@
 # COP3502
 
 def encoder():
-    pass
+    '''8-digit integer --> list of number '''
+
+    password = list(input("Please enter your password to encode: "))
+    new_password = [(int(num) + 3) for num in password]
+
+    print("Your password has been encoded and stored!")
+    return new_password
+
 
 
 def decoder():
