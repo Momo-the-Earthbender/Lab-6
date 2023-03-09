@@ -12,8 +12,13 @@ def encoder():
 
 
 
-def decoder():
-    pass
+def decoder(n_password):
+   '''decodes password'''
+
+    new_password = ''.join([str(num) for num in n_password])
+    old_password = ''.join([str(int(num) - 3) for num in n_password])
+    print(f'The encoded password is {new_password}, and the original password is {old_password}.')
+    return old_password
 
 
 def main():
